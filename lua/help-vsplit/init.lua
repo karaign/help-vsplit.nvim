@@ -55,7 +55,7 @@ function M.open_help_split()
 
          api.nvim_win_close(old_help_win, false)
 
-         vim.cmd 'vsplit' -- Create new help vertical split window and make it active.
+         vim.cmd '82vsplit' -- Create new help vertical split window and make it active.
          api.nvim_win_set_buf( api.nvim_get_current_win(), help_buf )
          bo.bufhidden = bufhidden
 
